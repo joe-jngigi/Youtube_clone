@@ -1,12 +1,22 @@
-import './App.css';
-import Header from './components/header';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <Header/>
-    </div>
-  );
-}
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { Box } from '@mui/material';
 
-export default App;
+import { ChannelDetails, Feed, SearchFeed, VideoDetails } from './pages';
+import { Navabar } from './components';
+
+const App = () => (
+    <Router>
+      <Box sx={{backgroundColor: '#000'}}>
+        <Navabar/>
+        <Routes>
+          <Route path='/' exact element = {<Feed/>}/>
+          <Route path='/video/:id' exact element = {<VideoDetails/>}/>
+          <Route path='/channel/:id' exact element = {<ChannelDetails/>}/>
+          <Route path='/search/:searchTerm' exact element = {<SearchFeed/>}/>
+        </Routes>
+      </Box>
+    </Router>
+  )
+export default App
