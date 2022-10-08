@@ -1,20 +1,8 @@
 /* Removing this will make sure that the default Tailwind settings have been overriden */
-/* @tailwind base; */
-
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
 
 ::-webkit-scrollbar {
   width: 0px;

@@ -16,9 +16,11 @@ Axios is a promise-based HTTP Client for node.js and the browser. It is isomorph
 `npm install --legacy-peer-deps` ==> This installs, the exact dependencies used in this project
 
 ### Using Tailwind with MUI
+* MUI works with tailwind ELSE IF it doesn't;
 * Install the tailwind dependencies.
 * Using Tailwind with MUI requires to understand 'CSS injection order'. In the tailwind.config.js, use `important: '#root',`
-* #root is the HTML root id. 
+* #root is the HTML root id.
+* Use the StyledEngineProvider in the index.js to render App component, this will overide the MUI CSS and injectfirst
 ## MAU (Material UI)
 Box - Used in the Apps component, it is simply like a div container
 Stack - Navbar, used for 1D layout; row or column - like flex
