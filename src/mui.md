@@ -24,3 +24,4 @@ Axios is a promise-based HTTP Client for node.js and the browser. It is isomorph
 ## MAU (Material UI)
 Box - Used in the Apps component, it is simply like a div container
 Stack - Navbar, used for 1D layout; row or column - like flex
+Typography - Use for general text editting
