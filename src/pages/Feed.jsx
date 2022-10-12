@@ -5,12 +5,12 @@ const Feed = () => {
   return (
     <Stack className='flex-col md:flex-row '>
       {/* Will Wrap the sidebar and the other one */}
-      <Box className='h-auto md:h-[90vh] border-gray-400 border-1 border-solid p-1'>
+      <Box className='h-auto md:h-[90vh] border-r-1 p-1'>
         {/* SIDEBAR */}
         <Sidebar/>
-        <Typography>
+        <Typography className='text-gray-100 text-sm'>
           &copy;{new Date().getFullYear()}
-        <span> &nbsp;SoftOps Inc.&nbsp; All rights reserved.</span>
+          <span> &nbsp;SoftOps Inc.&nbsp; All rights reserved.</span>
         </Typography>
       </Box>
     </Stack>
