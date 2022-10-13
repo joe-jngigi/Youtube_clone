@@ -21,7 +21,11 @@ Axios is a promise-based HTTP Client for node.js and the browser. It is isomorph
 * Using Tailwind with MUI requires to understand 'CSS injection order'. In the tailwind.config.js, use `important: '#root',`
 * #root is the HTML root id.
 * Use the StyledEngineProvider in the index.js to render App component, this will overide the MUI CSS and injectfirst
+
 ## MAU (Material UI)
 Box - Used in the Apps component, it is simply like a div container
 Stack - Navbar, used for 1D layout; row or column - like flex
 Typography - Use for general text editting
+
+## API
+The api used is **Youtube v3 API Documentation**, using the free subscription, and will use Axios, and use the fetchAPI conponent to fetch through the options.

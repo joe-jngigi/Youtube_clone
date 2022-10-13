@@ -1,3 +1,6 @@
 export {default as Navabar} from './Navabar'
 export {default as SearchBar} from './searchbar'
 export {default as Sidebar} from './Sidebar'
+export {default as Videos} from './Videos'
+export {default as VideoCard} from './VideoCard'
+export {default as Channel} from './Channel'
