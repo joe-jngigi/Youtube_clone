@@ -15,24 +15,24 @@ const Feed = () => {
     fetchapi(`search?part=snippet&q=${selectedCategory}`)
     .then((data) =>(setVideos(data.items)))
   }, [selectedCategory])
-  
+  const check = `search?part=snippet&q=${selectedCategory}`
+   console.log(videos)
   return (
     <Stack className='flex-col md:flex-row '>
       {/* Will Wrap the sidebar*/}
       <Box className='h-auto md:h-[90vh] border-r-1 p-1'>
         {/* SIDEBAR */}
         <Sidebar selectedCategory = {selectedCategory} setselectedCategory = {setselectedCategory}/>
-        <Typography className='text-gray-100 text-sm '>
+        <Typography className='text-gray-100 text-sm'>
           &copy;{new Date().getFullYear()}
           <span> &nbsp;SoftOps Inc.&nbsp; All rights reserved.</span>
         </Typography>
       </Box>
       {/* This will wrap the video feed section */}
-      <Box p={2} className='overflow-y-auto h-[90vh] flex'>
+      <Box p={2} className='overflow-y-auto h-[90vh] flex flex-col'>
         <Typography variant='h4' fontWeight='bold' mb={2} className = 'text-gray-100'>
          <span>{selectedCategory}</span><span className='text-[#FC1503]'>Videos</span>
         </Typography>
-
         <Videos videos = {videos}/>
       </Box>
     </Stack>

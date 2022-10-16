@@ -7,7 +7,7 @@ import { CheckCircle } from '@mui/icons-material'
 import { demoProfilePicture } from '../utils/constanst'
 const Channel = ({channel}) => {
   return (
-    <Box className='rounded-2xl'>
+    <Box className='rounded-2xl bg-white'>
       <Link to = {`/channel/${channel?.id?.channelId}`}>
         <CardContent className='flex flex-col justify-center text-center text-gray-100'>
           <CardMedia className='h-48 w-48 rounded-full' image= {channel?.snippet?.thumbnails?.high?.url || demoProfilePicture} alt = {channel?.snippet?.title} />

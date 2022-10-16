@@ -8,9 +8,9 @@ import { CheckCircle } from '@mui/icons-material'
 import { demoThumbnailUrl, demoVideoUrl, demoVideoTitle, demoChannelUrl, demoChannelTitle } from '../utils/constanst'
 
 const VideoCard = ({video: {id: {videoId},snippet }}) => {
-  console.log(videoId, snippet)
+  // console.log(videoId, snippet)
   return (
-    <Card className=''>
+    <Card className='w-full'>
       <Link to = {videoId ? `/video/${videoId}` : demoVideoUrl}>
         <CardMedia image = {snippet?.thumbnails?.high?.url} alt = {snippet?.title} className = 'w-full h-44'/>
       </Link>
@@ -18,7 +18,7 @@ const VideoCard = ({video: {id: {videoId},snippet }}) => {
       <CardContent className='bg-main-dark-bg h-24'>
         <Link to = {videoId ? `/video/${videoId}` : demoVideoUrl}>
           <Typography variant='subtitle1' className='font-bold text-gray-200'>
-            {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
+            {snippet?.title.slice(0, 35) || demoVideoTitle.slice(0, 60)}
           </Typography>
         </Link>
         <Link to = {snippet?.channelId ? `/video/${snippet?.channelId}` : demoChannelUrl}>

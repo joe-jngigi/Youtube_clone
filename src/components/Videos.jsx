@@ -2,14 +2,15 @@ import React from 'react'
 import { Stack, Box } from '@mui/material';
 import{ VideoCard, Channel }from './';
 const Videos = ({videos}) => {
-    console.log(videos);
+    // console.log(videos);
   return (
-    <Stack direction='row' className='flex-wrap justify-start gap-5'>
+    <Stack className='flex-wrap justify-start gap-5 grid sm:grid-cols-2 md:grid-cols-3'>
+        <Channel />
         {
             videos.map((item, index) =>(
                 <Box key={index} >
+                    {item.id.channelId && <Channel channel = {item}/>}
                     {item.id.videoId && <VideoCard video ={item}/>}
-                    {/* {item.id.channelId && <Channel channel = {item}/>} */}
 
                 </Box>
             ))

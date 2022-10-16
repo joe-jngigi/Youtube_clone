@@ -15,6 +15,8 @@ const options = {
   headers: {
     // The key will be from the .env file
     // 'X-RapidAPI-Key': process.env.REACT_APP_RAPID_KEY_API,
+    // bf34f912d8mshb4623cbaf7c0d49p1b09ecjsn68512d268b30
+
     'X-RapidAPI-Key': 'bf34f912d8mshb4623cbaf7c0d49p1b09ecjsn68512d268b30',
     'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
   }
