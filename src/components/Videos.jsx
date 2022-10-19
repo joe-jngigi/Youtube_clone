@@ -3,6 +3,7 @@ import { Stack, Box } from '@mui/material';
 import{ VideoCard, Channel }from './';
 const Videos = ({videos}) => {
     // console.log(videos);
+    if (!videos?.length) return 'loading...'
   return (
     <Stack className='flex-wrap justify-start gap-5 grid sm:grid-cols-2 md:grid-cols-3'>
         <Channel />
