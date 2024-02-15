@@ -15,7 +15,7 @@ const Searchbar = () => {
     }
   }
   return (
-    <Paper component='form' onSubmit={() =>{handleSubmit}} className='flex flex-row bg-black border-solid  p-1 shadow-none'>
+    <Paper component='form' onSubmit={handleSubmit} className='flex flex-row bg-black border-solid  p-1 shadow-none'>
         <input type="text" className='md:w-96 outline-none pl-3 rounded-3xl placeholder:italic' placeholder='Search' value={SearchTerm} onChange={(e) =>setSearchTerm(e.target.value)}/>
         <IconButton className='text-fuchsia-600' type='submit'>
           <Search/>
