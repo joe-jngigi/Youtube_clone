@@ -15,7 +15,6 @@ const Feed = () => {
     fetchapi(`search?part=snippet&q=${selectedCategory}`)
     .then((data) =>(setVideos(data.items)))
   }, [selectedCategory])
-  const check = `search?part=snippet&q=${selectedCategory}`
    console.log(videos)
   return (
     <Stack className='flex-col md:flex-row '>
